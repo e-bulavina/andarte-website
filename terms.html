@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uvjeti kupnje — andARTE</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="andARTE"></a>
+    <nav aria-label="Glavni izbornik">
+      <ul class="nav-list">
+        <li><a href="index.html#o-meni">O meni</a></li>
+        <li><a href="index.html#umjetnine">Umjetnine</a></li>
+        <li><a href="index.html#projekti">Projekti po mjeri</a></li>
+        <li><a href="index.html#radionice">Radionice</a></li>
+        <li><a href="index.html#knjiga">Knjiga</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm btn-text" href="index.html#kontakt">Kontakt</a>
+      <button class="hamburger" aria-label="Otvori izbornik" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main class="legal">
+  <div class="wrap">
+    <a class="back-link" href="index.html">&larr; Natrag na početnu</a>
+    <h1>Uvjeti kupnje</h1>
+
+    <div class="biz-box">
+      <div><b>Nositelj obrta:</b> Morena Andačić</div>
+      <div><b>Naziv obrta:</b> andarte glass</div>
+      <div><b>Adresa:</b> Ulica Baližerka 60</div>
+      <div><b>OIB:</b> 63165745528</div>
+      <div><b>Email:</b> <a href="mailto:andarte.glass@gmail.com">andarte.glass@gmail.com</a></div>
+    </div>
+
+    <h2>1. Predmet prodaje</h2>
+    <p>Predmet prodaje su originalne umjetnine prikazane na web stranici.</p>
+
+    <h2>2. Cijene</h2>
+    <p>Sve cijene izražene su u eurima (€). Cijena dostave nije uključena u istaknutu cijenu umjetnine i obračunava se zasebno, ovisno o lokaciji kupca.</p>
+
+    <h2>3. Postupak kupnje</h2>
+    <p>Kupac šalje upit putem kontakt obrasca ili e-maila. Nakon dogovora o dostupnosti i trošku dostave, kupcu se šalje ponuda s konačnom cijenom. Kupnja se smatra potvrđenom nakon vidljive uplate.</p>
+
+    <h2>4. Način plaćanja</h2>
+    <p>Plaćanje se vrši putem bankovne transakcije prema podacima navedenim na ponudi.</p>
+
+    <h2>5. Dostava</h2>
+    <ul>
+      <li>Umjetnine i knjige se šalju putem pouzdane dostavne službe.</li>
+      <li>Rok isporuke ovisi o destinaciji.</li>
+      <li>Dostava je dostupna unutar Hrvatske i međunarodno.</li>
+      <li>Trošak dostave obračunava se prema lokaciji kupca i dimenzijama umjetnine.</li>
+      <li>Umjetnine se pažljivo pakiraju radi sigurne isporuke.</li>
+      <li>U slučaju oštećenja tijekom transporta, kupac je dužan obavijestiti prodavatelja u roku od 48 sati.</li>
+    </ul>
+
+    <h2>6. Povrat</h2>
+    <p>Sukladno Zakonu o zaštiti potrošača, kupac ima pravo na jednostrani raskid ugovora u roku od 14 dana, osim u slučaju personaliziranih ili naručenih radova. Personalizirani i po mjeri izrađeni proizvodi ne podliježu pravu na jednostrani raskid ugovora sukladno Zakonu o zaštiti potrošača.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> andarte glass, obrt — Morena Andačić. Sva prava pridržana.</span>
+      <span><a href="privacy.html">Politika privatnosti</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();
+const h=document.querySelector(".hamburger"),n=document.querySelector(".nav-list");
+if(h&&n){h.addEventListener("click",()=>n.classList.toggle("is-open"));}</script>
+</body>
+</html>

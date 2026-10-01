@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politika privatnosti — andARTE</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="andARTE"></a>
+    <nav aria-label="Glavni izbornik">
+      <ul class="nav-list">
+        <li><a href="index.html#o-meni">O meni</a></li>
+        <li><a href="index.html#umjetnine">Umjetnine</a></li>
+        <li><a href="index.html#projekti">Projekti po mjeri</a></li>
+        <li><a href="index.html#radionice">Radionice</a></li>
+        <li><a href="index.html#knjiga">Knjiga</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm btn-text" href="index.html#kontakt">Kontakt</a>
+      <button class="hamburger" aria-label="Otvori izbornik" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main class="legal">
+  <div class="wrap">
+    <a class="back-link" href="index.html">&larr; Natrag na početnu</a>
+    <h1>Politika privatnosti</h1>
+    <p>Ova web stranica prikuplja osobne podatke isključivo u svrhu odgovora na upite i realizacije kupnje.</p>
+
+    <p>Prikupljaju se sljedeći podaci:</p>
+    <ul>
+      <li>Ime i prezime</li>
+      <li>Email adresa</li>
+      <li>Podaci potrebni za dostavu</li>
+    </ul>
+
+    <p>Podaci se ne prosljeđuju trećim stranama osim dostavnoj službi u svrhu isporuke.</p>
+
+    <p>Kupac ima pravo zatražiti brisanje ili izmjenu svojih podataka u bilo kojem trenutku.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> andarte glass, obrt — Morena Andačić. Sva prava pridržana.</span>
+      <span><a href="terms.html">Uvjeti kupnje</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();
+const h=document.querySelector(".hamburger"),n=document.querySelector(".nav-list");
+if(h&&n){h.addEventListener("click",()=>n.classList.toggle("is-open"));}</script>
+</body>
+</html>
