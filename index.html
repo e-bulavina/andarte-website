@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>andARTE</title>
-<meta name="description" content="andARTE — Morena Andačić">
+<title>andARTE — umjetničko staklo</title>
+<meta name="description" content="andARTE — umjetničko staklo u tehnici fuzije, Morena Andačić">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,471 +14,89 @@
 </head>
 <body>
 <a class="skip-link" href="#main">Preskoči na sadržaj</a>
-
-<header class="site-header">
+<header class="site-header over-hero">
   <div class="wrap">
-    <a href="#top" class="brand"><img src="images/logo.png" alt="andARTE"></a>
+    <a href="./" class="brand" aria-label="andARTE — početna"><img src="images/logo-light.png" alt="andARTE"></a>
     <nav aria-label="Glavni izbornik">
-      <ul class="nav-list">
-        <li><a href="#o-meni">O meni</a></li>
-        <li><a href="#umjetnine">Umjetnine</a></li>
-        <li><a href="#projekti">Projekti po mjeri</a></li>
-        <li><a href="#radionice">Radionice</a></li>
-        <li><a href="#knjiga">Knjiga</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="o-meni.html">O meni</a></li>
+        <li><a href="umjetnine.html">Umjetnine</a></li>
+        <li><a href="projekti.html">Projekti po mjeri</a></li>
+        <li><a href="radionice.html">Radionice</a></li>
+        <li><a href="knjiga.html">Knjiga</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
-    <div class="nav-cta">
-      <a class="btn btn-primary btn-sm btn-text" href="#kontakt">Kontakt</a>
-      <button class="hamburger" aria-label="Otvori izbornik" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+    <button class="hamburger" aria-label="Otvori izbornik" aria-expanded="false" aria-controls="nav-list">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
 <main id="main">
-
-  <!-- HERO -->
-  <section class="hero" id="top">
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <canvas class="hero-liquid" aria-hidden="true"></canvas>
+    <div class="hero-shade" aria-hidden="true"></div>
     <div class="wrap">
-      <div class="hero-copy reveal">
-        <span class="eyebrow placeholder-tag">Privremeni tekst &middot; zamijeniti</span>
+      <div class="hero-copy">
         <h1>andARTE</h1>
-        <!-- PLACEHOLDER — replace with Morena's own intro text once she sends it -->
-        <p class="placeholder-text">Ovdje će stajati kratak uvodni tekst o Moreni i njezinom radu. Zamijenite ovaj odlomak stvarnim tekstom kada ga Morena pošalje.</p>
-      </div>
-      <div class="hero-grid reveal">
-        <a href="images/hero-strip-1.jpg" data-lightbox-single><img src="images/hero-strip-1.jpg" alt="Detalj umjetničkog stakla u fuziji" loading="lazy"></a>
-        <a href="images/hero-strip-2.jpg" data-lightbox-single><img src="images/hero-strip-2.jpg" alt="Staklene skulpture u obliku jedra" loading="lazy"></a>
-        <a href="images/hero-strip-3.jpg" data-lightbox-single><img src="images/hero-strip-3.jpg" alt="Umjetničko djelo od fuziranog stakla" loading="lazy"></a>
-        <a href="images/hero-strip-4.jpg" data-lightbox-single><img src="images/hero-strip-4.jpg" alt="Umjetničko djelo od fuziranog stakla" loading="lazy"></a>
-        <a href="images/hero-strip-5.jpg" data-lightbox-single><img src="images/hero-strip-5.jpg" alt="Umjetničko djelo od fuziranog stakla" loading="lazy"></a>
-        <a href="images/hero-strip-6.jpg" data-lightbox-single><img src="images/hero-strip-6.jpg" alt="Umjetničko djelo od fuziranog stakla" loading="lazy"></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- O MENI -->
-  <section id="o-meni">
-    <div class="wrap">
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <h2>O meni</h2>
-          <p>Teško se mogu definirati pa mi je teško i opisati se jer je i jedno i drugo ograničavajuće i izgledalo bi kao puko nabrajanje zvanja, aktivnosti ili "uspjeha" i neuspjeha.</p>
-          <p>Rekla bih da su mi teška razdoblja uvijek donijela potrebnu promjenu. Svaki izazov koji me je srušio otvorio je vrata kreativnosti koja me je usmjerila, obogatila i izliječila.</p>
-          <p>Slikanje, kao moja prva ljubav, izrazilo se kroz izradu umjetničkog stakla u tehnici fuzije stakla. To je spajanje staklenog pigmenta, boje i stakla na visokim temperaturama (800–1300°C). Zatim pisanje koje me otkrilo i vratilo samoj sebi i na kraju dijeljenje svih iskustava, i osobnih i tehničkih, kroz radionice.</p>
-        </div>
-        <div class="about-photos reveal">
-          <a href="images/about-1.jpg" data-lightbox-single><img src="images/about-1.jpg" alt="Morena Andačić u ateljeu" loading="lazy"></a>
-          <a href="images/about-2.jpg" data-lightbox-single><img src="images/about-2.jpg" alt="Izrada umjetničkog stakla" loading="lazy"></a>
-          <a href="images/about-3.jpg" data-lightbox-single><img src="images/about-3.jpg" alt="Proces fuzije stakla" loading="lazy"></a>
-          <a href="images/about-4.jpg" data-lightbox-single><img src="images/about-4.jpg" alt="Detalj rada u ateljeu" loading="lazy"></a>
+        <p class="hero-sub">Gdje staklo priča, boje žive, a riječi ostaju.</p>
+        <div class="hero-actions">
+          <a class="btn btn-molten" href="umjetnine.html">Pogledajte umjetnine</a>
+          <a class="btn btn-ghost" href="radionice.html">Radionice</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- UMJETNINE -->
-  <section id="umjetnine">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <h2>Umjetnine</h2>
-      </div>
 
-      <ol class="buy-steps reveal">
-        <li><span class="num">1</span><p>Odaberite umjetninu</p></li>
-        <li><span class="num">2</span><p>Pošaljite upit</p></li>
-        <li><span class="num">3</span><p>Zaprimite ponudu s ukupnom cijenom</p></li>
-        <li><span class="num">4</span><p>Nakon uplate umjetnina se šalje na vašu adresu</p></li>
-      </ol>
-
-      <div class="price-note reveal">Osnovna cijena + dostava nije uključena</div>
-
-      <div class="art-grid" id="art-grid">
-        <article class="art-card reveal">
-          <a class="art-media" href="images/artwork-01-1.jpg" data-gallery="artwork-01-1.jpg,artwork-01-2.jpg,artwork-01-3.jpg">
-            <img src="images/artwork-01-1.jpg" alt="Duboko More" loading="lazy">
-          <span class="count">1 / 3</span>
-          </a>
-          <div class="art-body">
-            <h3>Duboko More</h3>
-          <div class="art-dims">Ø 30 cm, dubina 11 cm</div>
-            <div class="art-price">80 &euro;</div>
-          <a class="btn btn-outline btn-sm btn-block" href="mailto:andarte.glass@gmail.com?subject=Upit%20%E2%80%94%20Duboko%20More&body=Pozdrav%20Morena%2C%0A%0AZanima%20me%20umjetnina%20%E2%80%9CDuboko%20More%E2%80%9D%20%2880%20%E2%82%AC%2C%20%C3%98%2030%20cm%2C%20dubina%2011%20cm%29.%0AMolim%20Vas%20javite%20mi%20dostupnost%20i%20tro%C5%A1ak%20dostave%20na%20moju%20adresu.%0A%0AHvala%21%0A">Zanima me ova umjetnina</a>
-          </div>
-        </article>
-        <article class="art-card reveal">
-          <a class="art-media" href="images/artwork-02-1.jpg" data-gallery="artwork-02-1.jpg,artwork-02-2.jpg,artwork-02-3.jpg">
-            <img src="images/artwork-02-1.jpg" alt="Igra" loading="lazy">
-          <span class="art-badge sold">Prodano</span>
-          <span class="count">1 / 3</span>
-          </a>
-          <div class="art-body">
-            <h3>Igra</h3>
-            <div class="art-price sold">Prodano</div>
-          </div>
-        </article>
-        <article class="art-card reveal">
-          <a class="art-media" href="images/artwork-03-1.jpg" data-gallery="artwork-03-1.jpg,artwork-03-2.jpg,artwork-03-3.jpg,artwork-03-4.jpg">
-            <img src="images/artwork-03-1.jpg" alt="Lavanda" loading="lazy">
-          <span class="count">1 / 4</span>
-          </a>
-          <div class="art-body">
-            <h3>Lavanda</h3>
-          <div class="art-dims">Ø 36 cm, visina 8 cm</div>
-            <div class="art-price">60 &euro;</div>
-          <a class="btn btn-outline btn-sm btn-block" href="mailto:andarte.glass@gmail.com?subject=Upit%20%E2%80%94%20Lavanda&body=Pozdrav%20Morena%2C%0A%0AZanima%20me%20umjetnina%20%E2%80%9CLavanda%E2%80%9D%20%2860%20%E2%82%AC%2C%20%C3%98%2036%20cm%2C%20visina%208%20cm%29.%0AMolim%20Vas%20javite%20mi%20dostupnost%20i%20tro%C5%A1ak%20dostave%20na%20moju%20adresu.%0A%0AHvala%21%0A">Zanima me ova umjetnina</a>
-          </div>
-        </article>
-        <article class="art-card reveal">
-          <a class="art-media" href="images/artwork-04-1.jpg" data-gallery="artwork-04-1.jpg,artwork-04-2.jpg,artwork-04-3.jpg">
-            <img src="images/artwork-04-1.jpg" alt="Oko" loading="lazy">
-          <span class="art-badge sold">Prodano</span>
-          <span class="count">1 / 3</span>
-          </a>
-          <div class="art-body">
-            <h3>Oko</h3>
-            <div class="art-price sold">Prodano</div>
-          </div>
-        </article>
-        <article class="art-card reveal">
-          <a class="art-media" href="images/artwork-05-1.jpg" data-gallery="artwork-05-1.jpg,artwork-05-2.jpg">
-            <img src="images/artwork-05-1.jpg" alt="Val" loading="lazy">
-          <span class="count">1 / 2</span>
-          </a>
-          <div class="art-body">
-            <h3>Val</h3>
-          <div class="art-dims">Ø 27 cm, visina 5 cm</div>
-            <div class="art-price">60 &euro;</div>
-          <a class="btn btn-outline btn-sm btn-block" href="mailto:andarte.glass@gmail.com?subject=Upit%20%E2%80%94%20Val&body=Pozdrav%20Morena%2C%0A%0AZanima%20me%20umjetnina%20%E2%80%9CVal%E2%80%9D%20%2860%20%E2%82%AC%2C%20%C3%98%2027%20cm%2C%20visina%205%20cm%29.%0AMolim%20Vas%20javite%20mi%20dostupnost%20i%20tro%C5%A1ak%20dostave%20na%20moju%20adresu.%0A%0AHvala%21%0A">Zanima me ova umjetnina</a>
-          </div>
-        </article>
-        <article class="art-card reveal">
-          <a class="art-media" href="images/artwork-06-1.jpg" data-gallery="artwork-06-1.jpg,artwork-06-2.jpg">
-            <img src="images/artwork-06-1.jpg" alt="Crno-bijela Igra" loading="lazy">
-          <span class="count">1 / 2</span>
-          </a>
-          <div class="art-body">
-            <h3>Crno-bijela Igra</h3>
-          <div class="art-dims">Ø 36 cm, visina 8 cm</div>
-            <div class="art-price">120 &euro;</div>
-          <a class="btn btn-outline btn-sm btn-block" href="mailto:andarte.glass@gmail.com?subject=Upit%20%E2%80%94%20Crno-bijela%20Igra&body=Pozdrav%20Morena%2C%0A%0AZanima%20me%20umjetnina%20%E2%80%9CCrno-bijela%20Igra%E2%80%9D%20%28120%20%E2%82%AC%2C%20%C3%98%2036%20cm%2C%20visina%208%20cm%29.%0AMolim%20Vas%20javite%20mi%20dostupnost%20i%20tro%C5%A1ak%20dostave%20na%20moju%20adresu.%0A%0AHvala%21%0A">Zanima me ova umjetnina</a>
-          </div>
-        </article>
-        <article class="art-card reveal">
-          <a class="art-media" href="images/artwork-07-1.jpg" data-gallery="artwork-07-1.jpg,artwork-07-2.jpg">
-            <img src="images/artwork-07-1.jpg" alt="Škarpina" loading="lazy">
-          <span class="art-badge sold">Prodano</span>
-          <span class="count">1 / 2</span>
-          </a>
-          <div class="art-body">
-            <h3>Škarpina</h3>
-            <div class="art-price sold">Prodano</div>
-          </div>
-        </article>
-        <article class="art-card reveal">
-          <a class="art-media" href="images/artwork-08-1.jpg" data-gallery="artwork-08-1.jpg,artwork-08-2.jpg">
-            <img src="images/artwork-08-1.jpg" alt="Igra u plavom" loading="lazy">
-          <span class="count">1 / 2</span>
-          </a>
-          <div class="art-body">
-            <h3>Igra u plavom</h3>
-          <div class="art-dims">54 × 29 cm</div>
-            <div class="art-price">120 &euro;</div>
-          <a class="btn btn-outline btn-sm btn-block" href="mailto:andarte.glass@gmail.com?subject=Upit%20%E2%80%94%20Igra%20u%20plavom&body=Pozdrav%20Morena%2C%0A%0AZanima%20me%20umjetnina%20%E2%80%9CIgra%20u%20plavom%E2%80%9D%20%28120%20%E2%82%AC%2C%2054%20%C3%97%2029%20cm%29.%0AMolim%20Vas%20javite%20mi%20dostupnost%20i%20tro%C5%A1ak%20dostave%20na%20moju%20adresu.%0A%0AHvala%21%0A">Zanima me ova umjetnina</a>
-          </div>
-        </article>
-        <article class="art-card reveal">
-          <a class="art-media" href="images/artwork-09-1.jpg" data-gallery="artwork-09-1.jpg,artwork-09-2.jpg">
-            <img src="images/artwork-09-1.jpg" alt="Vatra u moru" loading="lazy">
-          <span class="count">1 / 2</span>
-          </a>
-          <div class="art-body">
-            <h3>Vatra u moru</h3>
-          <div class="art-dims">Ø 46 cm, visina 5 cm</div>
-            <div class="art-price">120 &euro;</div>
-          <a class="btn btn-outline btn-sm btn-block" href="mailto:andarte.glass@gmail.com?subject=Upit%20%E2%80%94%20Vatra%20u%20moru&body=Pozdrav%20Morena%2C%0A%0AZanima%20me%20umjetnina%20%E2%80%9CVatra%20u%20moru%E2%80%9D%20%28120%20%E2%82%AC%2C%20%C3%98%2046%20cm%2C%20visina%205%20cm%29.%0AMolim%20Vas%20javite%20mi%20dostupnost%20i%20tro%C5%A1ak%20dostave%20na%20moju%20adresu.%0A%0AHvala%21%0A">Zanima me ova umjetnina</a>
-          </div>
-        </article>
-        <article class="art-card reveal">
-          <a class="art-media" href="images/artwork-10-1.jpg" data-gallery="artwork-10-1.jpg,artwork-10-2.jpg,artwork-10-3.jpg">
-            <img src="images/artwork-10-1.jpg" alt="Rimljanin" loading="lazy">
-          <span class="count">1 / 3</span>
-          </a>
-          <div class="art-body">
-            <h3>Rimljanin</h3>
-          <div class="art-dims">42 × 33 cm</div>
-            <div class="art-price">250 &euro;</div>
-          <a class="btn btn-outline btn-sm btn-block" href="mailto:andarte.glass@gmail.com?subject=Upit%20%E2%80%94%20Rimljanin&body=Pozdrav%20Morena%2C%0A%0AZanima%20me%20umjetnina%20%E2%80%9CRimljanin%E2%80%9D%20%28250%20%E2%82%AC%2C%2042%20%C3%97%2033%20cm%29.%0AMolim%20Vas%20javite%20mi%20dostupnost%20i%20tro%C5%A1ak%20dostave%20na%20moju%20adresu.%0A%0AHvala%21%0A">Zanima me ova umjetnina</a>
-          </div>
-        </article>
-        <article class="art-card reveal">
-          <a class="art-media" href="images/artwork-11-1.jpg" data-gallery="artwork-11-1.jpg,artwork-11-2.jpg">
-            <img src="images/artwork-11-1.jpg" alt="Anđeo" loading="lazy">
-          <span class="count">1 / 2</span>
-          </a>
-          <div class="art-body">
-            <h3>Anđeo</h3>
-          <div class="art-dims">21 × 26 cm</div>
-            <div class="art-price">160 &euro;</div>
-          <a class="btn btn-outline btn-sm btn-block" href="mailto:andarte.glass@gmail.com?subject=Upit%20%E2%80%94%20An%C4%91eo&body=Pozdrav%20Morena%2C%0A%0AZanima%20me%20umjetnina%20%E2%80%9CAn%C4%91eo%E2%80%9D%20%28160%20%E2%82%AC%2C%2021%20%C3%97%2026%20cm%29.%0AMolim%20Vas%20javite%20mi%20dostupnost%20i%20tro%C5%A1ak%20dostave%20na%20moju%20adresu.%0A%0AHvala%21%0A">Zanima me ova umjetnina</a>
-          </div>
-        </article>
-        <article class="art-card reveal">
-          <a class="art-media" href="images/artwork-12-1.jpg" data-gallery="artwork-12-1.jpg,artwork-12-2.jpg">
-            <img src="images/artwork-12-1.jpg" alt="Morski san" loading="lazy">
-          <span class="count">1 / 2</span>
-          </a>
-          <div class="art-body">
-            <h3>Morski san</h3>
-          <div class="art-dims">50 × 23 × 29 cm</div>
-            <div class="art-price">120 &euro;</div>
-          <a class="btn btn-outline btn-sm btn-block" href="mailto:andarte.glass@gmail.com?subject=Upit%20%E2%80%94%20Morski%20san&body=Pozdrav%20Morena%2C%0A%0AZanima%20me%20umjetnina%20%E2%80%9CMorski%20san%E2%80%9D%20%28120%20%E2%82%AC%2C%2050%20%C3%97%2023%20%C3%97%2029%20cm%29.%0AMolim%20Vas%20javite%20mi%20dostupnost%20i%20tro%C5%A1ak%20dostave%20na%20moju%20adresu.%0A%0AHvala%21%0A">Zanima me ova umjetnina</a>
-          </div>
-        </article>
-        <article class="art-card reveal">
-          <a class="art-media" href="images/artwork-13-1.jpg" data-gallery="artwork-13-1.jpg,artwork-13-2.jpg">
-            <img src="images/artwork-13-1.jpg" alt="Žena od vatre" loading="lazy">
-          <span class="count">1 / 2</span>
-          </a>
-          <div class="art-body">
-            <h3>Žena od vatre</h3>
-          <div class="art-dims">32 × 32,5 × 29 cm</div>
-            <div class="art-price">250 &euro;</div>
-          <a class="btn btn-outline btn-sm btn-block" href="mailto:andarte.glass@gmail.com?subject=Upit%20%E2%80%94%20%C5%BDena%20od%20vatre&body=Pozdrav%20Morena%2C%0A%0AZanima%20me%20umjetnina%20%E2%80%9C%C5%BDena%20od%20vatre%E2%80%9D%20%28250%20%E2%82%AC%2C%2032%20%C3%97%2032%2C5%20%C3%97%2029%20cm%29.%0AMolim%20Vas%20javite%20mi%20dostupnost%20i%20tro%C5%A1ak%20dostave%20na%20moju%20adresu.%0A%0AHvala%21%0A">Zanima me ova umjetnina</a>
-          </div>
-        </article>
-        <article class="art-card reveal">
-          <a class="art-media" href="images/artwork-14-1.jpg" data-gallery="artwork-14-1.jpg,artwork-14-2.jpg">
-            <img src="images/artwork-14-1.jpg" alt="Žena od vatre II" loading="lazy">
-          <span class="count">1 / 2</span>
-          </a>
-          <div class="art-body">
-            <h3>Žena od vatre II</h3>
-          <div class="art-dims">32 × 32,5 × 29 cm</div>
-            <div class="art-price">250 &euro;</div>
-          <a class="btn btn-outline btn-sm btn-block" href="mailto:andarte.glass@gmail.com?subject=Upit%20%E2%80%94%20%C5%BDena%20od%20vatre%20II&body=Pozdrav%20Morena%2C%0A%0AZanima%20me%20umjetnina%20%E2%80%9C%C5%BDena%20od%20vatre%20II%E2%80%9D%20%28250%20%E2%82%AC%2C%2032%20%C3%97%2032%2C5%20%C3%97%2029%20cm%29.%0AMolim%20Vas%20javite%20mi%20dostupnost%20i%20tro%C5%A1ak%20dostave%20na%20moju%20adresu.%0A%0AHvala%21%0A">Zanima me ova umjetnina</a>
-          </div>
-        </article>
-        <article class="art-card reveal">
-          <a class="art-media" href="images/artwork-15-1.jpg" data-gallery="artwork-15-1.jpg,artwork-15-2.jpg">
-            <img src="images/artwork-15-1.jpg" alt="Šampier" loading="lazy">
-          <span class="count">1 / 2</span>
-          </a>
-          <div class="art-body">
-            <h3>Šampier</h3>
-          <div class="art-dims">Ø 34 cm, visina 6,5 cm</div>
-            <div class="art-price">120 &euro;</div>
-          <a class="btn btn-outline btn-sm btn-block" href="mailto:andarte.glass@gmail.com?subject=Upit%20%E2%80%94%20%C5%A0ampier&body=Pozdrav%20Morena%2C%0A%0AZanima%20me%20umjetnina%20%E2%80%9C%C5%A0ampier%E2%80%9D%20%28120%20%E2%82%AC%2C%20%C3%98%2034%20cm%2C%20visina%206%2C5%20cm%29.%0AMolim%20Vas%20javite%20mi%20dostupnost%20i%20tro%C5%A1ak%20dostave%20na%20moju%20adresu.%0A%0AHvala%21%0A">Zanima me ova umjetnina</a>
-          </div>
-        </article>
+  <section class="home-about paper">
+    <div class="wrap home-about-grid">
+      <figure class="home-about-photo"><img src="images/about-4.jpg" alt="Morena Andačić" loading="lazy"></figure>
+      <div>
+        <h2>Staklo, boja i vatra</h2>
+        <p>Slikanje, kao moja prva ljubav, izrazilo se kroz izradu umjetničkog stakla u tehnici fuzije stakla. To je spajanje staklenog pigmenta, boje i stakla na visokim temperaturama (800–1300°C).</p>
+        <a class="link-arrow" href="o-meni.html">Više o meni</a>
       </div>
     </div>
   </section>
 
-  <!-- PROJEKTI PO MJERI -->
-  <section id="projekti">
+  <section class="showcase paper">
     <div class="wrap">
-      <div class="custom-wrap">
-        <div class="reveal">
-          <h2>Personalizirani umjetnički projekti</h2>
-          <p>Svaka osoba, svaka obitelj i svaki dom ima svoju priču. Zadovoljstvo mi je otkriti je i ući u nju kroz suradnju s klijentima u njihovom ambijentu. Doživljavajući osobe u njihovom prostoru, rješenja za određeni design se sama nameću. Često je priča skrivena, a otkrije se upravo zajedničkim traženjem detalja koji bi tu priču zaokružili i nadogradili.</p>
-
-          <p>Izrada ogledala i dekorativnih elemenata, umjetničkih vrata, elemenata za kuhinje i catering, interijera i poslovnih prostora.</p>
-
-          <a class="btn btn-accent" href="mailto:andarte.glass@gmail.com?subject=Upit%20%E2%80%94%20Konzultacije%20za%20projekt%20po%20mjeri&body=Pozdrav%20Morena%2C%0A%0AZanima%20me%20izrada%20personaliziranog%20umjetni%C4%8Dkog%20projekta.%20Ukratko%20o%20ideji%2Fprostoru%3A%0A%0AHvala%21">Zatraži konzultacije</a>
-
-          <h3 class="steps-title">Kako suradnja funkcionira</h3>
-          <ol class="custom-steps">
-            <li><span>Početni upit</span></li>
-            <li><span>Konzultacije</span></li>
-            <li><span>Idejno rješenje</span></li>
-            <li><span>Ponuda</span></li>
-            <li><span>Izrada</span></li>
-          </ol>
-        </div>
-
-        <div class="custom-gallery reveal" id="custom-gallery">
-        <a href="images/custom-01.jpg" data-gallery="custom-01.jpg,custom-02.jpg,custom-03.jpg,custom-04.jpg,custom-05.jpg,custom-06.jpg,custom-07.jpg,custom-08.jpg,custom-09.jpg,custom-10.jpg,custom-11.jpg" data-gallery-index="0">
-          <img src="images/custom-01.jpg" alt="Personalizirani projekt 1" loading="lazy">
-        </a>
-        <a href="images/custom-02.jpg" data-gallery="custom-01.jpg,custom-02.jpg,custom-03.jpg,custom-04.jpg,custom-05.jpg,custom-06.jpg,custom-07.jpg,custom-08.jpg,custom-09.jpg,custom-10.jpg,custom-11.jpg" data-gallery-index="1">
-          <img src="images/custom-02.jpg" alt="Personalizirani projekt 2" loading="lazy">
-        </a>
-        <a href="images/custom-03.jpg" data-gallery="custom-01.jpg,custom-02.jpg,custom-03.jpg,custom-04.jpg,custom-05.jpg,custom-06.jpg,custom-07.jpg,custom-08.jpg,custom-09.jpg,custom-10.jpg,custom-11.jpg" data-gallery-index="2">
-          <img src="images/custom-03.jpg" alt="Personalizirani projekt 3" loading="lazy">
-        </a>
-        <a href="images/custom-04.jpg" data-gallery="custom-01.jpg,custom-02.jpg,custom-03.jpg,custom-04.jpg,custom-05.jpg,custom-06.jpg,custom-07.jpg,custom-08.jpg,custom-09.jpg,custom-10.jpg,custom-11.jpg" data-gallery-index="3">
-          <img src="images/custom-04.jpg" alt="Personalizirani projekt 4" loading="lazy">
-        </a>
-        <a href="images/custom-05.jpg" data-gallery="custom-01.jpg,custom-02.jpg,custom-03.jpg,custom-04.jpg,custom-05.jpg,custom-06.jpg,custom-07.jpg,custom-08.jpg,custom-09.jpg,custom-10.jpg,custom-11.jpg" data-gallery-index="4">
-          <img src="images/custom-05.jpg" alt="Personalizirani projekt 5" loading="lazy">
-        </a>
-        <a href="images/custom-06.jpg" data-gallery="custom-01.jpg,custom-02.jpg,custom-03.jpg,custom-04.jpg,custom-05.jpg,custom-06.jpg,custom-07.jpg,custom-08.jpg,custom-09.jpg,custom-10.jpg,custom-11.jpg" data-gallery-index="5">
-          <img src="images/custom-06.jpg" alt="Personalizirani projekt 6" loading="lazy">
-        </a>
-        <a href="images/custom-07.jpg" data-gallery="custom-01.jpg,custom-02.jpg,custom-03.jpg,custom-04.jpg,custom-05.jpg,custom-06.jpg,custom-07.jpg,custom-08.jpg,custom-09.jpg,custom-10.jpg,custom-11.jpg" data-gallery-index="6">
-          <img src="images/custom-07.jpg" alt="Personalizirani projekt 7" loading="lazy">
-        </a>
-        <a href="images/custom-08.jpg" data-gallery="custom-01.jpg,custom-02.jpg,custom-03.jpg,custom-04.jpg,custom-05.jpg,custom-06.jpg,custom-07.jpg,custom-08.jpg,custom-09.jpg,custom-10.jpg,custom-11.jpg" data-gallery-index="7">
-          <img src="images/custom-08.jpg" alt="Personalizirani projekt 8" loading="lazy">
-        </a>
-        <a href="images/custom-09.jpg" data-gallery="custom-01.jpg,custom-02.jpg,custom-03.jpg,custom-04.jpg,custom-05.jpg,custom-06.jpg,custom-07.jpg,custom-08.jpg,custom-09.jpg,custom-10.jpg,custom-11.jpg" data-gallery-index="8">
-          <img src="images/custom-09.jpg" alt="Personalizirani projekt 9" loading="lazy">
-        </a>
-        <a href="images/custom-10.jpg" data-gallery="custom-01.jpg,custom-02.jpg,custom-03.jpg,custom-04.jpg,custom-05.jpg,custom-06.jpg,custom-07.jpg,custom-08.jpg,custom-09.jpg,custom-10.jpg,custom-11.jpg" data-gallery-index="9">
-          <img src="images/custom-10.jpg" alt="Personalizirani projekt 10" loading="lazy">
-        </a>
-        <a href="images/custom-11.jpg" data-gallery="custom-01.jpg,custom-02.jpg,custom-03.jpg,custom-04.jpg,custom-05.jpg,custom-06.jpg,custom-07.jpg,custom-08.jpg,custom-09.jpg,custom-10.jpg,custom-11.jpg" data-gallery-index="10">
-          <img src="images/custom-11.jpg" alt="Personalizirani projekt 11" loading="lazy">
-        </a>
-      </div>
+      <div class="showcase-grid">
+        <a href="images/hero-strip-2.jpg" data-gallery="hero-strip-2.jpg,hero-strip-3.jpg,hero-strip-4.jpg,hero-strip-5.jpg,hero-strip-6.jpg" data-gallery-index="0"><img src="images/hero-strip-2.jpg" alt="Staklene skulpture u obliku jedra" loading="lazy"></a>
+        <a href="images/hero-strip-3.jpg" data-gallery="hero-strip-2.jpg,hero-strip-3.jpg,hero-strip-4.jpg,hero-strip-5.jpg,hero-strip-6.jpg" data-gallery-index="1"><img src="images/hero-strip-3.jpg" alt="Umjetničko djelo od fuziranog stakla" loading="lazy"></a>
+        <a href="images/hero-strip-4.jpg" data-gallery="hero-strip-2.jpg,hero-strip-3.jpg,hero-strip-4.jpg,hero-strip-5.jpg,hero-strip-6.jpg" data-gallery-index="2"><img src="images/hero-strip-4.jpg" alt="Umjetničko djelo od fuziranog stakla" loading="lazy"></a>
+        <a href="images/hero-strip-5.jpg" data-gallery="hero-strip-2.jpg,hero-strip-3.jpg,hero-strip-4.jpg,hero-strip-5.jpg,hero-strip-6.jpg" data-gallery-index="3"><img src="images/hero-strip-5.jpg" alt="Umjetničko djelo od fuziranog stakla" loading="lazy"></a>
+        <a href="images/hero-strip-6.jpg" data-gallery="hero-strip-2.jpg,hero-strip-3.jpg,hero-strip-4.jpg,hero-strip-5.jpg,hero-strip-6.jpg" data-gallery-index="4"><img src="images/hero-strip-6.jpg" alt="Umjetničko djelo od fuziranog stakla" loading="lazy"></a>
       </div>
     </div>
   </section>
 
-  <!-- RADIONICE -->
-  <section id="radionice">
+  <section class="home-tiles">
     <div class="wrap">
-      <div class="section-head reveal">
-        <h2>Radionice</h2>
-      </div>
-
-      <article class="workshop-card reveal">
-        <div class="workshop-media">
-          <img src="images/workshop-glass.jpg" alt="Radionica izrade stakla" loading="lazy">
-        </div>
-        <div>
-          <h3>a) Radionica izrade stakla</h3>
-          <p>S dvadesetogodišnjim iskustvom u tehnici spajanja stakla (fuziji), dosegnuo sam vrhunac kreativnosti koji mi omogućuje kontinuirani napredak. Moj rad obuhvaća projekte za muzeje i galerije, kao i održavanje radionica i tečajeva. Fuzija stakla proces je u kojem se osnovno staklo na visokoj temperaturi (oko 820°C) povezuje s bojama i pigmentima, stvarajući novo, bezvremensko staklo. Od njega se mogu oblikovati razni predmeti poput svjetiljki, vaza ili skulptura.</p>
-          <p>Posjetite moj atelje, razgledajte moje radove i otkrijte vlastitu kreativnost na tečaju uz stručno vodstvo, piće i ugodnu atmosferu.</p>
-
-          <div class="workshop-meta">
-            <div><strong>Trajanje</strong>veći predmeti 4–5 h, manji 2 h — radi se do dovršetka</div>
-            <div><strong>Jezici</strong>hrvatski, talijanski, engleski</div>
-          </div>
-
-          <table class="workshop-price-table">
-            <tr><td>Veći predmeti — 2 osobe</td><td>180 € (ukupno)</td></tr>
-            <tr><td>Veći predmeti — 1 osoba</td><td>120 €</td></tr>
-            <tr><td>Manji predmeti — 3 osobe</td><td>30 €/osobi</td></tr>
-            <tr><td>Manji predmeti — 1 osoba</td><td>40 €</td></tr>
-          </table>
-
-          <a class="btn btn-primary" href="mailto:andarte.glass@gmail.com?subject=Upit%20%E2%80%94%20Radionica%20izrade%20stakla&body=Pozdrav%20Morena%2C%0A%0AZanima%20me%20radionica%20izrade%20stakla.%20Broj%20osoba%20i%20%C5%BEeljeni%20termin%3A%0A%0AHvala%21">Zatraži ponudu za radionicu</a>
-        </div>
-      </article>
-
-      <article class="workshop-card no-photo reveal">
-        <div>
-          <h3>b) Radionica slikanja na platnu (noć nesavršene umjetnosti)</h3>
-          <p>Kad kažem nesavršeno, to ponajprije znači nešto oslobođeno pravila i očekivanja. Kad se oslobodimo pravila i očekivanja, nestaju vlastite procjene i strah od procjene drugih. Nesavršenost je u tom smislu savršena za to da nas vole i da se volimo kroz osvjetljavanje i otvaranje onog što je oduvijek u nama.</p>
-          <p>Slikat ćemo na platnima jer se na platno doslovno moramo baciti — u jednom trenutku to će značiti slikanje tijelom, a u drugom slikanje svime čime smo inspirirani: krpom, spužvom, špatulom. Slikat ćemo i kistovima, vodeći se emocijama koje u nama izazivaju boje, linije i sama slika u nastajanju.</p>
-          <p>Idealno za privatne grupe, team buildinge, djevojačke večeri, evente ili ako ste u potrazi za edukativnom radionicom.</p>
-
-          <div class="workshop-meta">
-            <div><strong>Trajanje</strong>3–4 sata, radi se do dovršetka</div>
-            <div><strong>Grupa</strong>do 5 osoba</div>
-            <div><strong>Period</strong>01.10. – 30.04.</div>
-            <div><strong>Adresa</strong>Parking Monte, Trgovačka ul. 43D, 52100 Vodnjan</div>
-          </div>
-
-          <h4 class="steps-title">Kako suradnja funkcionira</h4>
-          <ol class="mini-steps">
-            <li><b>1</b>Upit ili prijava</li>
-            <li><b>2</b>Potvrda termina</li>
-            <li><b>3</b>Uplata rezervacije</li>
-            <li><b>4</b>Održavanje radionice</li>
-          </ol>
-
-          <a class="btn btn-primary" href="mailto:andarte.glass@gmail.com?subject=Upit%20%E2%80%94%20No%C4%87%20nesavr%C5%A1ene%20umjetnosti&body=Pozdrav%20Morena%2C%0A%0AZanima%20me%20radionica%20slikanja%20na%20platnu%20%28No%C4%87%20nesavr%C5%A1ene%20umjetnosti%29.%20Broj%20osoba%20i%20%C5%BEeljeni%20termin%3A%0A%0AHvala%21">Zatraži ponudu za radionicu</a>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- KNJIGA -->
-  <section id="knjiga">
-    <div class="wrap">
-      <div class="book-wrap">
-        <div class="book-cover reveal">
-          <img src="images/book.jpg" alt="Naslovnica knjige Nulta točka">
-        </div>
-        <div class="reveal">
-          <h2>Nulta točka</h2>
-          <p>Nulta točka nije nastala s namjerom da se napiše knjiga, nego kao potreba da se prenese spoznaja kroz vlastitu misao.</p>
-          <p>Buđenje me je izguralo iz plošnosti života u vlastitu dubinu. Tijelo me je kroz senzacije koje su me plašile probudilo od neprirodnih činjenica i uspavljujućih ambicija, iz svijeta prosječnosti i besmislenosti koji sve neobično i značajno svodi na banalno. Nulta točka je postala, a i danas je, put kroz koji istražujem svoju životnu priču.</p>
-
-          <ul class="book-facts">
-            <li><b>Cijena</b> 16 €</li>
-            <li><b>Uvez</b> meki uvez</li>
-            <li><b>Jezik</b> hrvatski</li>
-            <li><b>Broj stranica</b> 263</li>
-            <li><b>Dostava</b> obračunava se zasebno</li>
-          </ul>
-
-          <a class="btn btn-primary" href="mailto:andarte.glass@gmail.com?subject=Narud%C5%BEba%20%E2%80%94%20Knjiga%20Nulta%20to%C4%8Dka&body=Pozdrav%20Morena%2C%0A%0A%C5%BDeljela%20bih%20naru%C4%8Diti%20knjigu%20%27Nulta%20to%C4%8Dka%27.%20Moja%20adresa%20za%20dostavu%3A%0A%0AHvala%21">Želim naručiti knjigu</a>
-
-          <ol class="mini-steps" style="margin-top:1.6rem;">
-            <li><b>1</b>Upit</li>
-            <li><b>2</b>Ponuda s dostavom</li>
-            <li><b>3</b>Uplata</li>
-            <li><b>4</b>Slanje</li>
-          </ol>
-
-          <blockquote class="excerpt">
-            "Opet sam se predala, a život me ponovno uzeo kad sam mu se prepustila. Moje su me ruke doslovno htjele hraniti i odlučila sam sama raditi kruh. Kupila sam brašno u mlinu i, nakon nekoliko pokušaja, ovladala tehnikom. Osim što me pravljenje kruha opuštalo i vraćalo starim vrijednostima, zaustavljalo je vrijeme."
-            <cite>Ulomak</cite>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- KONTAKT -->
-  <section id="kontakt">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <h2>Kontakt</h2>
-      </div>
-
-      <div class="contact-wrap">
-        <div class="contact-card reveal">
-          <h3>Kontakt podaci</h3>
-          <div class="contact-line"><span class="ic">&#9742;</span> <a href="tel:+385981691499">+385 98 169 1499</a></div>
-          <div class="contact-line"><span class="ic">&#9993;</span> <a href="mailto:andarte.glass@gmail.com">andarte.glass@gmail.com</a></div>
-          <div class="contact-line"><span class="ic">&#9998;</span> andarte glass — obrt, Morena Andačić</div>
-        </div>
-
-        <form class="contact-card reveal" id="contact-form" action="mailto:andarte.glass@gmail.com" method="post" enctype="text/plain">
-          <h3>Pošaljite upit</h3>
-          <div class="form-two">
-            <div class="form-row">
-              <label for="name">Ime i prezime</label>
-              <input id="name" name="name" type="text" required autocomplete="name">
-            </div>
-            <div class="form-row">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" required autocomplete="email">
-            </div>
-          </div>
-          <div class="form-row">
-            <label for="topic">Tema upita</label>
-            <select id="topic" name="topic">
-              <option>Umjetnina</option>
-              <option>Projekt po mjeri</option>
-              <option>Radionica</option>
-              <option>Knjiga</option>
-              <option>Ostalo</option>
-            </select>
-          </div>
-          <div class="form-row">
-            <label for="message">Poruka</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-block">Pošalji upit</button>
-        </form>
+      <div class="tiles">
+      <a class="tile" href="umjetnine.html">
+        <div class="tile-img"><img src="images/artwork-10-1.jpg" alt="" loading="lazy"></div>
+        <h3>Umjetnine</h3>
+        <p>Zdjele, skulpture i objekti od fuziranog stakla, svaki komad unikat.</p>
+      </a>
+      <a class="tile" href="projekti.html">
+        <div class="tile-img"><img src="images/custom-06.jpg" alt="" loading="lazy"></div>
+        <h3>Projekti po mjeri</h3>
+        <p>Ogledala, vrata i kuhinjske stijene osmišljene za vaš prostor.</p>
+      </a>
+      <a class="tile" href="radionice.html">
+        <div class="tile-img"><img src="images/workshop-glass.jpg" alt="" loading="lazy"></div>
+        <h3>Radionice</h3>
+        <p>Izrada stakla i slikanje na platnu, u malim grupama u ateljeu.</p>
+      </a>
+      <a class="tile" href="knjiga.html">
+        <div class="tile-img"><img src="images/book.jpg" alt="" loading="lazy"></div>
+        <h3>Knjiga Nulta točka</h3>
+        <p>Osobna priča o buđenju, promjeni i povratku sebi.</p>
+      </a>
       </div>
     </div>
   </section>
@@ -489,21 +107,22 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="images/logo.png" alt="andARTE">
+        <img src="images/logo-light.png" alt="andARTE">
+        <p>Umjetničko staklo u tehnici fuzije, izrađeno ručno u ateljeu u Vodnjanu.</p>
       </div>
       <div class="footer-col">
-        <h4>Izbornik</h4>
+        <h2>Stranice</h2>
         <ul>
-          <li><a href="#o-meni">O meni</a></li>
-          <li><a href="#umjetnine">Umjetnine</a></li>
-          <li><a href="#projekti">Projekti po mjeri</a></li>
-          <li><a href="#radionice">Radionice</a></li>
-          <li><a href="#knjiga">Knjiga</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="o-meni.html">O meni</a></li>
+          <li><a href="umjetnine.html">Umjetnine</a></li>
+          <li><a href="projekti.html">Projekti po mjeri</a></li>
+          <li><a href="radionice.html">Radionice</a></li>
+          <li><a href="knjiga.html">Knjiga</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Info</h4>
+        <h2>Kontakt</h2>
         <ul>
           <li><a href="tel:+385981691499">+385 98 169 1499</a></li>
           <li><a href="mailto:andarte.glass@gmail.com">andarte.glass@gmail.com</a></li>
@@ -513,7 +132,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; <span id="year"></span> andarte glass, obrt — Morena Andačić. Sva prava pridržana.</span>
+      <span>&copy; <span id="year">2026</span> andarte glass, obrt — Morena Andačić. Sva prava pridržana.</span>
       <span>OIB: 63165745528</span>
     </div>
   </div>

@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Uvjeti kupnje — andARTE</title>
+<meta name="description" content="andARTE — umjetničko staklo u tehnici fuzije, Morena Andačić">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,30 +13,35 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Preskoči na sadržaj</a>
 <header class="site-header">
   <div class="wrap">
-    <a href="index.html" class="brand"><img src="images/logo.png" alt="andARTE"></a>
+    <a href="./" class="brand" aria-label="andARTE — početna"><img src="images/logo-dark.png" alt="andARTE"></a>
     <nav aria-label="Glavni izbornik">
-      <ul class="nav-list">
-        <li><a href="index.html#o-meni">O meni</a></li>
-        <li><a href="index.html#umjetnine">Umjetnine</a></li>
-        <li><a href="index.html#projekti">Projekti po mjeri</a></li>
-        <li><a href="index.html#radionice">Radionice</a></li>
-        <li><a href="index.html#knjiga">Knjiga</a></li>
-        <li><a href="index.html#kontakt">Kontakt</a></li>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="o-meni.html">O meni</a></li>
+        <li><a href="umjetnine.html">Umjetnine</a></li>
+        <li><a href="projekti.html">Projekti po mjeri</a></li>
+        <li><a href="radionice.html">Radionice</a></li>
+        <li><a href="knjiga.html">Knjiga</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
-    <div class="nav-cta">
-      <a class="btn btn-primary btn-sm btn-text" href="index.html#kontakt">Kontakt</a>
-      <button class="hamburger" aria-label="Otvori izbornik" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
+    <button class="hamburger" aria-label="Otvori izbornik" aria-expanded="false" aria-controls="nav-list">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
-<main class="legal">
-  <div class="wrap">
-    <a class="back-link" href="index.html">&larr; Natrag na početnu</a>
-    <h1>Uvjeti kupnje</h1>
+<main id="main">
+  <section class="page-banner">
+    <div class="wrap">
+      <h1>Uvjeti kupnje</h1>
+    </div>
+  </section>
+
+  <section class="paper legal">
+    <div class="wrap">
 
     <div class="biz-box">
       <div><b>Nositelj obrta:</b> Morena Andačić</div>
@@ -69,20 +75,47 @@
 
     <h2>6. Povrat</h2>
     <p>Sukladno Zakonu o zaštiti potrošača, kupac ima pravo na jednostrani raskid ugovora u roku od 14 dana, osim u slučaju personaliziranih ili naručenih radova. Personalizirani i po mjeri izrađeni proizvodi ne podliježu pravu na jednostrani raskid ugovora sukladno Zakonu o zaštiti potrošača.</p>
-  </div>
+  
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo-light.png" alt="andARTE">
+        <p>Umjetničko staklo u tehnici fuzije, izrađeno ručno u ateljeu u Vodnjanu.</p>
+      </div>
+      <div class="footer-col">
+        <h2>Stranice</h2>
+        <ul>
+          <li><a href="o-meni.html">O meni</a></li>
+          <li><a href="umjetnine.html">Umjetnine</a></li>
+          <li><a href="projekti.html">Projekti po mjeri</a></li>
+          <li><a href="radionice.html">Radionice</a></li>
+          <li><a href="knjiga.html">Knjiga</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Kontakt</h2>
+        <ul>
+          <li><a href="tel:+385981691499">+385 98 169 1499</a></li>
+          <li><a href="mailto:andarte.glass@gmail.com">andarte.glass@gmail.com</a></li>
+          <li><a href="terms.html">Uvjeti kupnje</a></li>
+          <li><a href="privacy.html">Politika privatnosti</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="footer-bottom">
-      <span>&copy; <span id="year"></span> andarte glass, obrt — Morena Andačić. Sva prava pridržana.</span>
-      <span><a href="privacy.html">Politika privatnosti</a></span>
+      <span>&copy; <span id="year">2026</span> andarte glass, obrt — Morena Andačić. Sva prava pridržana.</span>
+      <span>OIB: 63165745528</span>
     </div>
   </div>
 </footer>
 
-<script>document.getElementById("year").textContent = new Date().getFullYear();
-const h=document.querySelector(".hamburger"),n=document.querySelector(".nav-list");
-if(h&&n){h.addEventListener("click",()=>n.classList.toggle("is-open"));}</script>
+<script src="js/script.js"></script>
 </body>
 </html>

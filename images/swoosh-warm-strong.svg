@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" preserveAspectRatio="xMidYMid slice">
+<defs><filter id="b" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="52"/></filter></defs>
+<g filter="url(#b)" fill="none" stroke-linecap="round">
+<path d="M 380 820 C 640 620 860 440 1120 400 S 1480 300 1800 140" stroke="#E2581C" stroke-width="320" stroke-opacity="0.6"/>
+<path d="M 700 860 C 940 700 1100 600 1320 560 S 1620 460 1800 380" stroke="#B3261A" stroke-width="220" stroke-opacity="0.6"/>
+<path d="M 640 -120 C 900 80 1080 180 1300 170" stroke="#D9A441" stroke-width="220" stroke-opacity="0.38"/>
+<path d="M 1200 820 C 1320 680 1480 640 1620 560 S 1760 460 1820 420" stroke="#C2385E" stroke-width="200" stroke-opacity="0.4"/>
+<path d="M 830 250 C 900 215 980 215 1070 185" stroke="#3FA6E6" stroke-width="110" stroke-opacity="0.55"/>
+</g></svg>
